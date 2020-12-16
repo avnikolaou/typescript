@@ -17,6 +17,14 @@ export class Company {
         }
     }
 
+    markerContent(): string {
+        return (
+            `<div>
+                <h1>${this.companyName ? this.companyName : 'N/A'}</h1>
+                <h3>${this.catchPhrase ? this.catchPhrase : 'N/A'}</h3>
+            </div>`
+        );
+    }
 }
 
 export class OrderEze extends Company {

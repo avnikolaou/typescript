@@ -14,6 +14,10 @@ export class User {
             lng: parseFloat(faker.address.longitude())
         }
     }
+
+    markerContent(): string {
+        return `User Name: ${this.name  ? this.name : 'N/A'}`;
+    }
 }
 
 export class Makis extends User {
