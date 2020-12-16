@@ -24,7 +24,7 @@ export class CustomMap {
     }
 
     addMarker(mappable: Mappable): void {
-        const marker =new google.maps.Marker({
+        const marker = new google.maps.Marker({
             map: this.googleMap,
             position: {
                 lat: mappable.location.lat,
