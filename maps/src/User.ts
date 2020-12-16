@@ -15,3 +15,9 @@ export class User {
         }
     }
 }
+
+export class Makis extends User {
+    constructor(public location: { lat: number, lng: number }) {
+        super();
+    }
+}

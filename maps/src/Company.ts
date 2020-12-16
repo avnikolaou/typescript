@@ -16,4 +16,11 @@ export class Company {
             lng: parseFloat(faker.address.longitude())
         }
     }
+
+}
+
+export class OrderEze extends Company {
+    constructor(public location: { lat: number, lng: number }) {
+        super();
+    }
 }
