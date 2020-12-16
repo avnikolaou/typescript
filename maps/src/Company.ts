@@ -28,7 +28,7 @@ export class Company {
 }
 
 export class OrderEze extends Company {
-    constructor(public location: { lat: number, lng: number }) {
+    constructor(public companyName: string, public catchPhrase:string, public location: { lat: number, lng: number }) {
         super();
     }
 }
